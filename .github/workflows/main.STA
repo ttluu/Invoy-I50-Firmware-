@@ -1,0 +1,407 @@
+
+ROM used:   61350/65536 (94%)
+            61350/65536 (94%) including unused fragments
+
+            4.2 Average locations per line
+            25.3 Average locations per statement
+
+RAM used:   1799/3896 (46%) at main() level
+            2427/3896 (62%) worst case
+
+Stack used: 10 worst case (6 in main + 4 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+ 2776  1225  51  main.c
+   48     0   0  main.h
+ 1024     0   0  Devices\18LF46K22.h
+ 1352     2   0  Drivers\stdlib.h
+   32     0   0  Drivers\stddef.h
+  435     2   0  Drivers\string.h
+   28     0   0  Drivers\ctype.h
+ 2227     2   0  Drivers\math.h
+   37     2   0  Drivers\stdio.h
+  204    10   0  Drivers\ieeefloat.c
+  283    80   3  Drivers\input.c
+   98    31   1  24256-custom.c
+  150    71   3  DS3231.c
+   50     2   0  DS3231.h
+  244    20   1  config.c
+   92     2   0  ble.h
+  569   269  11  ble.c
+   55     2   0  reading.h
+  225     2   0  datatype.h
+  259   110   5  reading.c
+   54     2   0  Peripherals.h
+   36     2   0  ErrorCodes.h
+  249    37   2  peripherals.c
+   10     6   0  util.c
+ 2776   506  21  bme680.c
+  301     2   0  BME680.h
+  665     2   0  bme680_defs.h
+  168     2   0  ..\..\Program Files (x86)\PICC\Drivers\stdint.h
+   32     2   0  ..\..\Program Files (x86)\PICC\Drivers\stddef.h
+  149    30   1  battery.c
+   32     2   0  Events.c
+----- -----
+14660  2425 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     40   0    1             @delay_ms1
+0      8   0    0             @PUTCHARI_BIU_1
+0     24   0    0             @GETCH_BIU_1
+0      8   0    0             @PUTCHARI_BIU_2
+0     58   0    0             @RCV_ISR_2
+0     38   0    0             @GETCH_2
+0     16   0    0             @KBHIT_2
+0     28   0    1             @I2C_WRITEU_1
+0     28   0    1             @I2C_READU_1
+0     70   0    8             @SPI_XFER_1
+0     22   0    0             @TIMERISR_1
+0     52   0    0             @GET_TICKS_1
+0     42   0    4             @SET_TICKS_1
+0    128   0    5    243  7.0  strcmp
+0     78   0    4             @DIVS88
+0     78   0    2             @MUL88
+0    120   0    6             @DIVS1616
+0     84   0    6             @MULS1616
+0    246   0   11             @MULFF
+0     80   0    2             @SITOF
+0    632   1   16             @ADDFF
+0    350   0   14             @DIVFF
+0    462   0    9   1815 10.5  atoi
+0    570   0   11   1817 10.4  atol
+0     92   0   14             @MUL3232
+0    630   1   19   1549 12.4  strtof
+0     72   0    5             @DIV1616
+0     34   0    5             @MUL1616
+0    122   0   10             @FLT
+0     60   0    4             @SFTOI
+0     54   0    2             @ITOF
+0     66   0    6    270  5.9  f_PICtoIEEE
+0     68   0    6    305  5.8  f_IEEEtoPIC
+0     12   0    1     41  1.3  InputPutc
+0    138   0    7    600 10.0  get_string
+0     32   0    1             @SPRINTF
+0     38   0    2             @PSTRINGR_115200_31774_31775
+0     46   0    6    139  3.3  get_Int8
+0     44   0    3             @DIV88
+0    190   0    6             @PRINTF_D_1127
+0     54   0    9    139  3.3  get_Int16
+0    148   0   13             @DIV3232
+0     74   0   24    142  3.5  get_float
+0     68   0    5             @FTOSD
+0    154   0    0     85  1.2  ShowPrompt
+0     18   0    0             @const1187
+0     42   0    3             @PSTRINGCN_115200_31774_31775
+0    180   0    9             @PRINTF_LU_115200_31774_31775
+0      8   0    0     32  1.0  init_ext_eeprom
+0    116   0    6    325  3.9  write_ext_eeprom
+0    134   0    5    214  2.6  read_ext_eeprom
+0     76   0    5    144  4.3  config_serial_set
+0     64   0    6    135  4.3  config_serial_get
+0     76   0   10    191  5.5  ConfigWriteFloat
+0    108   0   11    210  6.0  ConfigReadFloat
+0     16   0    2     33  1.7  ConfigReadByte
+0     30   0    3     52  1.8  ConfigWriteByte
+0     70   0    7    159  4.2  ble_log
+0     44   0    1    178  4.2  ble_log_process
+0     64   0    7    186  4.3  ble_header_equals
+0     34   0    0    141  1.8  ble_cmd_system_hello
+0     34   0    0    141  1.8  ble_cmd_system_AddressGet
+0     38   0    2    243  1.9  ble_cmd_gap_set_mode
+0    156   0    8    573  5.3  ble_cmd_attributes_write
+0    150   0   16    243  4.5  ble_wait
+0     20   0    1     33  2.0  ble_wait_for_message
+0   2744   2  292   6970 14.4  ble_process
+0     18   0    0             @const1525
+0     32   0    2             @PSTRINGC_1127
+0     14   0    0             @const1527
+0     18   0    0             @const1528
+0     22   0    0             @const1529
+0     34   0    0             @const1531
+0     40   0    3             @PSTRINGCN_1127
+0    198   0    9             @PRINTF_LU_1127
+0     48   0    0             @const1536
+0    124   0    2             @PRINTF_U_1127
+0     50   0    0             @const1541
+0     36   0    0             @const1542
+0     24   0    0             @const1547
+0     28   0    0             @const1548
+0     38   0    0             @const1549
+0     28   0    0             @const1553
+0     20   0    0             @const1554
+0     30   0    0             @const1555
+0     30   0    0             @const1556
+0     34   0    0             @const1557
+0     30   0    0             @const1558
+0     34   0    0             @const1559
+0     38   0    0             @const1560
+0     36   0    0             @const1561
+0     46   0    0             @const1564
+0     70   0    2             @PRINTF_X_1127
+0     48   0    0             @const1568
+0     92   0    6    311  6.0  ble_receive
+0     26   0    0             @const1576
+0     34   0    2             @PSTRINGC_115200_31774_31775
+0     98   0    1    143  1.7  DisableBleModule
+0     22   0    0             @const1578
+0    460   0   13   1442  7.7  ble_configure
+0     32   0    0             @const1580
+0    136   0    1    213  4.3  bleNotifyErrorSet
+0     20   0    0             @const1585
+0    156   0    2             @PRINTF_U_115200_31774_31775
+0     70   0    0    187  4.2  bleNotifyErrorResetErrorBits
+0     22   0    0             @const1590
+0     22   0    0             @const1591
+0    540   0   30   1225  6.3  readings_reset
+0     40   0    0             @const1618
+0    104   0    6    180  3.8  reading_index_start
+0    104   0    6    178  4.0  reading_index_stop
+0    862   1   36   2376  9.0  reading_save
+0     40   0    0             @const1629
+0    152   0   29    357  7.0  reading_fetch
+0    630   1   41   1666  5.9  reading_simulate
+0     36   0    0             @const1648
+0     12   0    0             @const1649
+0    222   0    6             @PRINTF_D_115200_31774_31775
+0     38   0    0             @const1653
+0    926   1   27   1066  4.8  readings_print
+0     38   0    0             @const1658
+0     74   0    0             @const1659
+0     54   0    0             @const1660
+0    236   0    9             @PRINTF_LD_115200_31774_31775
+0    192   0   12             @PRINTF_L32U_115200_31774_31775
+0    414   0   13             @PRINTF_L32D_115200_31774_31775FPFPF
+0     40   0    0             @const1668
+0     38   0    4     33  1.7  tone
+0    134   0    8             @PWM_SET_PERIOD_HW_1
+0     50   0    0     67  1.2  play
+0    106   0    0    149  1.3  play_error
+0     82   0   11    127  3.5  illumination_brightness
+0     14   0    0     48  1.1  illumination_all_off
+0     46   0    2     35  1.3  illumination_use
+0     66   0    6             @WRITEBITA
+0     32   0    0     32  1.2  photodiode
+0    128   0    4    111  2.1  prompt_float
+0      8   0    0             @const1687
+0     18   0    0             @const1689
+0     90   0    5             @SDTOF
+0    478   0   16    212  4.0  polynomialfit
+0    190   0   16    166  3.6  GetNewVolume
+0     56   0    4             @DTOF
+0   8734   7  283  20350 17.9  Compute_Breath_Volume
+0     32   0    0             @const1963
+0     24   0    0             @const1964
+0     76   0    0             @const1980
+0      6   0    0             @const1982
+0     42   0    0             @const1983
+0    160   0    0             @const1984
+0    214   0    6    849  7.1  checkBMEPowerUp
+0     26   0    0             @const1994
+0     26   0    0             @const1995
+0    140   0    8    635  7.5  bme680_soft_reset
+0    134   0    9    598  6.7  bme680_get_regs
+0    832   1   30    776  6.2  calc_temperature
+0   1048   1   61   4462 10.7  get_calib_data
+0    110   0    8    583  7.2  set_mem_page
+0     58   0    5    252  5.8  get_mem_page
+0     84   0    4    181  4.0  null_ptr_check
+0     82   0    2    185  2.6  Write_Byte
+0    112   0    2    328  3.9  Read_Byte
+0     84   0   11    351  5.5  Read
+0     52   0    0     59  1.6  ConstructBatteryModule
+0    158   0    0    395  3.6  BatteryManagement
+0     22   0    0             @const2041
+0    170   0    5    469  7.5  BatteryCapacity
+0     62   0    2    117  2.2  initBME
+0     48   0    0    125  1.6  shutDown
+0     34   0    0             @const2072
+0     26   0    0             @const2073
+0    266   0    5    472  4.2  hardwareFailure
+0     28   0    0             @const2077
+0     42   0    0             @const2078
+0    232   0    6    491  2.8  MeasureLEDs
+0    272   0    2    766  6.3  check_wet_cartridge
+0    298   0    1    631  3.3  get_LED_Brightness
+0     36   0    0             @const2088
+0     70   0    2             @PRINTF_X_115200_31774_31775
+0   2424   2   27   7311 11.1  autoSetLEDBrightness
+0     10   0    0             @const2107
+0     10   0    0             @const2108
+0     10   0    0             @const2109
+0   1176   1   35   3250 10.4  check_bad_or_used_cartridge
+0    350   0    6   1078  2.9  MeasureDarkness
+0    784   1   18   1858  4.5  Whitebalances
+0     16   0    0             @const2128
+0     20   0    0             @const2132
+0   4204   3   60   6561 13.0  AnalyzeBreathSample
+0     70   0    0             @const2149
+0     52   0    0             @const2151
+0     72   0    0             @const2153
+0     14   0    0             @const2155
+0     76   0    0             @const2156
+0     14   0    0             @const2158
+0     74   0    0             @const2159
+0     14   0    0             @const2161
+0     38   0    0             @const2163
+0    134   0    8    122  3.9  EvaluateConcentration
+0   1000   1   30    745  6.1  Calibrate
+0     60   0    0             @const2175
+0     60   0    0             @const2176
+0     60   0    0             @const2177
+0    628   1   34    562  7.2  readings_csv
+0     58   0    0             @const2187
+0     64   0    1    117  3.0  checkForCartridge
+0     34   0    0             @const2189
+0    296   0    6    893  6.8  full_test
+0     54   0    0             @const2195
+0     34   0    0             @const2196
+0     38   0    0             @const2197
+0   3060   2   50  10980 16.5  performBreathTest
+0     22   0    0             @const2210
+0     26   0    0             @const2211
+0     54   0    0             @const2212
+0     44   0    0             @const2213
+0      8   0    0             @const2215
+0     10   0    0             @const2216
+0     14   0    0             @const2217
+0     46   0    0             @const2218
+0     30   0    0             @const2219
+0     42   0    0             @const2220
+0     78   0    0             @const2221
+0     32   0    0             @const2222
+0     22   0    0             @const2223
+0     20   0    0             @const2224
+0     36   0    0             @const2225
+0    184   0    7    200  4.3  setBreathVolume
+0     46   0    0             @const2230
+0   1748   1   28   4767 10.4  selfTest
+0     14   0    0             @const2241
+0      6   0    0             @const2243
+0      4   0    0             @const2244
+0      4   0    0             @const2245
+0     22   0    0             @const2246
+0      8   0    0             @const2247
+0     14   0    0             @const2248
+0     18   0    0             @const2249
+0     30   0    0             @const2250
+0   8428   7  389  23642 17.1  main
+0     54   0    0             @const2262
+0     40   0    0             @const2265
+0     40   0    0             @const2266
+0     64   0    0             @const2267
+0     22   0    0             @const2270
+0     24   0    0             @const2271
+0     20   0    0             @const2272
+0     26   0    0             @const2277
+0     24   0    0             @const2281
+0     38   0    0             @const2283
+0     36   0    0             @const2284
+0     46   0    0             @const2285
+0     46   0    0             @const2286
+0     46   0    0             @const2287
+0     50   0    0             @const2288
+0     38   0    0             @const2289
+0     50   0    0             @const2290
+0     40   0    0             @const2291
+0     34   0    0             @const2292
+0     36   0    0             @const2293
+0     44   0    0             @const2294
+0     44   0    0             @const2295
+0     36   0    0             @const2296
+0     48   0    0             @const2297
+0     48   0    0             @const2298
+0     70   0    0             @const2299
+0     42   0    0             @const2300
+0     40   0    0             @const2301
+0     46   0    0             @const2302
+0     46   0    0             @const2303
+0     56   0    0             @const2304
+0     40   0    0             @const2305
+0     40   0    0             @const2306
+0     42   0    0             @const2307
+0     42   0    0             @const2308
+0     24   0    0             @const2309
+0     26   0    0             @const2310
+0     26   0    0             @const2311
+0     34   0    0             @const2312
+0     26   0    0             @const2317
+0     20   0    0             @const2318
+0     42   0    0             @const2320
+0     34   0    0             @const2321
+0     24   0    0             @const2322
+0     20   0    0             @const2325
+0     24   0    0             @const2327
+0     10   0    0             @const2329
+0     28   0    0             @const2333
+0     26   0    0             @const2334
+0     18   0    0             @const2335
+0     24   0    0             @const2336
+0     14   0    0             @const2338
+0     40   0    0             @const2339
+0     42   0    0             @const2340
+0     40   0    0             @const2341
+0     38   0    0             @const2342
+0     34   0    0             @const2343
+0     32   0    0             @const2346
+0     32   0    0             @const2348
+0     20   0    0             @const2350
+0     26   0    0             @const2351
+0     16   0    0             @const2354
+0     28   0    0             @const2355
+0     28   0    0             @const2357
+0     28   0    0             @const2359
+0     28   0    0             @const2361
+0     24   0    0             @const2363
+0     14   0    0             @const2364
+0     24   0    0             @const2365
+0     14   0    0             @const2366
+0     24   0    0             @const2367
+0     14   0    0             @const2368
+0     24   0    0             @const2369
+0     10   0    0             @const2370
+0     16   0    0             @const2372
+0     24   0    0             @const2373
+0     26   0    0             @const2377
+0     24   0    0             @const2378
+0     26   0    0             @const2380
+0     28   0    0             @const2382
+0     26   0    0             @const2383
+0     48   0    0             @const2385
+0     24   0    0             @const2386
+0     12   0    0             @const2387
+0     14   0    0             @const2389
+0     14   0    0             @const2391
+0     14   0    0             @const2393
+0     34   0    0             @const2395
+0     24   0    0             @const2402
+0     30   0    0             @const2406
+0     32   0    0             @const2407
+0     72   0    0             @const2408
+0     24   0    0             @const2409
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               88
+    Statements              2425
+    Comments                3313
+    Volume (V)              200068
+    Difficulty (D)          473.6
+    Effort to implement (E) 94744900
+    Time to implement (T)   1462 hours, 7 minutes
+    Est Delivered Bugs (B)  69
+    Cyclomatic Complexity   292
+    Maintainability (MI)    72
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000C4   190  0  
+000C6-0FFFE  61156  4182  
+
+
+

@@ -1,0 +1,17 @@
+Compiling C:\I50\Invoy 50\main on 04-Feb-20 at 16:20
+--- Info 300 "C:\I50\Invoy 50\main.h" Line 45(1,1): More info:   PWM period: 2.05 ms, Frequency: 488.281 Hz, Resolution: 10.00 bits
+--- Info 300 "C:\I50\Invoy 50\main.h" Line 47(1,1): More info:   Timer 1 tick time is 1.02 ms
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@DIV88)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@I2C_WRITEU_1)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@PSTRINGCN_115200_31774_31775)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@PRINTF_LU_115200_31774_31775)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (ble_cmd_gap_set_mode)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@ITOF)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (ConfigWriteFloat)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (write_ext_eeprom)
+>>> Warning 216 "main.c" Line 2775(1,2): Interrupts disabled during call to prevent re-entrancy:  (@MULS1616)
+>>> Warning 226 "main.c" Line 142(1,1): Function never called  Write SCR=19418
+>>> Warning 226 "main.c" Line 142(1,1): Function never called  Write SCR=19418
+      Memory usage:   ROM=94%      RAM=46% - 62%
+      0 Errors,  11 Warnings.
+Build Successful.

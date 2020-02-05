@@ -1,0 +1,5 @@
+Compiling C:\Users\TuLan\Documents\GitHub\Invoy Base Unit\main on 06-Jun-18 at 17:28
+*** Error 44 "C:\Users\TuLan\Documents\GitHub\Invoy Base Unit\main.h" Line 20(5,76): Internal Error - Contact CCS  PPUSE
+--- Info 300 "C:\Users\TuLan\Documents\GitHub\Invoy Base Unit\main.h" Line 29(1,1): More info:   Timer 1 tick time is 1.02 ms
+      1 Errors,  0 Warnings.
+Build Failed.
